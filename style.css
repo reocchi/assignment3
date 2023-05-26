@@ -817,24 +817,26 @@ nav.categories .categories_name_wrapper {
 }
 
 .order_card_quantity {
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.1rem;
+    min-width: max-content;
 }
 
 .order_list_wrapper {
     display: flex;
     flex-flow: column;
-    align-items: center;
-
+    align-items: flex-end;
+    width: calc(100% - 4rem);
+    align-content: center;
+    margin: 0 auto;
 }
 
 .order_card_wrapper {
     display: flex;
     flex-flow: column;
-
     background-color: white;
-    width: calc(100% - 4rem);
+    width: 100%;
     margin: 1rem 0;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     border-radius: 2rem;
     font-size: 1.6rem;
 }
@@ -892,7 +894,7 @@ nav.categories .categories_name_wrapper {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     box-shadow: rgba(var(--brownrgb), 0.09) 0 -0.7rem 0.8rem;
 }
 
@@ -986,11 +988,9 @@ nav.categories .categories_name_wrapper {
 .order_list_wrapper h4 {
     align-self: start;
     width: calc(100% - 6rem);
-    margin: 3rem auto 0;
+    margin: 3rem 0 0;
     font-weight: 400;
     font-size: 1.6rem;
-    ;
-
 }
 
 
@@ -1122,6 +1122,9 @@ nav.categories .categories_name_wrapper {
     display: none;
 }
 
+.sp_show{
+    display: block;
+}
 
 .order_pg_wrapper{
 
@@ -1129,6 +1132,7 @@ nav.categories .categories_name_wrapper {
 
 .menu_pg_wrapper{
     display: block;
+    margin-bottom: 20rem;
 }
 
 

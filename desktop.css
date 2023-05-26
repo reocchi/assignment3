@@ -21,7 +21,7 @@ img {
 }
 
 main {
-    margin: 10rem 0 10rem 0;
+    margin: 15rem 0 10rem 0;
 }
 
 
@@ -54,19 +54,6 @@ main {
     transition: 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-
-.left {
-    margin-left: auto;
-}
-
-
-.justify_unset {
-    justify-content: unset;
-}
-
-.flex_row_reverse{
-    flex-flow: row-reverse;
-}
 
 /*------------*/
 /* Header    
@@ -421,7 +408,7 @@ footer {
 /*------------*/
 
 .menu_item_list_wrapper {
-    max-width: 56vw;
+    max-width: 65vw;
     margin: 0 auto;
 }
 
@@ -445,7 +432,7 @@ footer {
 
 
 .menu_item {
-    max-width: calc((100% - 58rem)/2);
+    max-width: 13vw;
     min-width: 19rem;
 }
 
@@ -675,24 +662,34 @@ nav.categories .categories_name_wrapper {
 }
 
 .order_card_quantity {
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.2rem;
+    min-width: max-content;
 }
+
+.order_card_quantity {}
 
 .order_list_wrapper {
     display: flex;
     flex-flow: column;
     align-items: center;
+    min-width: 40rem;
+    /* margin-top: 3rem; */
+}
 
+.order_list_wrapper p{
+    padding: 4rem 5rem;
+    margin: 0rem 0;
+    font-size: 2rem;;
+    max-width: 40rem;
 }
 
 .order_card_wrapper {
     display: flex;
     flex-flow: column;
-
     background-color: white;
     width: calc(100% - 4rem);
     margin: 1rem 0;
-    padding: 2rem 0;
+    padding: 2rem 0 0rem;
     border-radius: 2rem;
     font-size: 1.6rem;
 }
@@ -704,6 +701,12 @@ nav.categories .categories_name_wrapper {
     padding: 2rem;
     padding-top: 0;
 
+}
+
+.order_card_info{
+    display: flex;
+    flex-flow: column;
+    gap: 2rem 0;
 }
 
 
@@ -775,9 +778,9 @@ nav.categories .categories_name_wrapper {
 .order_summary_total {
     display: flex;
     justify-content: space-between;
-
     font-size: 1.8rem;
     font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .order_summary_checkout {
@@ -840,7 +843,7 @@ nav.categories .categories_name_wrapper {
     width: calc(100% - 6rem);
     margin: 3rem auto 0;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 2rem;
     ;
 
 }
@@ -851,6 +854,7 @@ nav.categories .categories_name_wrapper {
     flex-flow: column;
     border: 1px solid rgba(var(--brownrgb), 0.2);
     padding: 1rem;
+    font-size: 1.9rem;
 
 }
 
@@ -871,7 +875,6 @@ nav.categories .categories_name_wrapper {
 
 .form_wrapper {
     display: grid;
-
     grid-column-gap: 1rem;
     grid-template-columns: auto auto;
     grid-template-rows: 3rem 3rem 3rem;
@@ -879,7 +882,7 @@ nav.categories .categories_name_wrapper {
         "name name"
         "number number"
         "expiration security";
-    padding: 0 2rem 2rem;
+    padding: 0 2rem 4rem;
     gap: 3rem;
 }
 
@@ -972,4 +975,30 @@ nav.categories .categories_name_wrapper {
 
 .menu_pg_wrapper nav, .order_pg_wrapper nav{
     border-radius: 0;
+    /* width: 80vw; */
+    /* border-radius: 1rem; */
+}
+
+
+
+
+/*------------*/
+/* Modifiers
+/*------------*/
+
+.left {
+    margin-left: auto;
+}
+
+
+.justify_unset {
+    justify-content: unset;
+}
+
+.flex_row_reverse{
+    flex-flow: row-reverse;
+}
+
+.no_flex{
+    display: block;
 }
