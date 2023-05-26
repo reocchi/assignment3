@@ -4,6 +4,6 @@ var nav = document.getElementsByClassName('hamburger')[0];
 
 navMenu.addEventListener('click', function () {
 
-    nav.classList.toggle(' is_active');
+    nav.classList.toggle('is_active');
     console.log('Hello!!');
 }, false);
