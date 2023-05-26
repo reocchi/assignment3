@@ -526,11 +526,11 @@ nav.categories .categories_name_wrapper {
 }
 .dish_feature_wrapper{
     position: fixed;
-    height: 54vw;
+    height: 67vw;
     overflow: scroll;
-    background-color: white;
-    aspect-ratio: 7/12;
+    aspect-ratio: 10/30;
     min-width: 24vw;
+    background-color: #f6efd8;
 }
 
 .dish_img_wrapper {
@@ -597,6 +597,10 @@ nav.categories .categories_name_wrapper {
 /* Cart Options
 /*------------*/
 
+.cart_link{
+    
+}
+
 .cart_options_wrapper {
     font-size: 2.0rem;
     font-weight: 600;
@@ -604,8 +608,6 @@ nav.categories .categories_name_wrapper {
     justify-content: space-around;
     padding-bottom: 2rem;
 }
-
-
 
 .quantity_wrapper {
     display: flex;
@@ -704,7 +706,7 @@ nav.categories .categories_name_wrapper {
 
 }
 
-.order_card_info
+
 
 /* Name, desc and Edit */
     {
@@ -957,7 +959,7 @@ nav.categories .categories_name_wrapper {
 * PAGE WRAPPER
 */
 
-.menu_pg_wrapper{/* display: flex; *//* justify-content: center; *//* max-width: 80%; */}
+.menu_pg_wrapper{display: flex;justify-content: center;}
 
 
 .order_pg_wrapper{
