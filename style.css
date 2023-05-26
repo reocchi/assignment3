@@ -41,7 +41,8 @@ img{
 }
 
 a{
-    text-decoration: none;;
+    text-decoration: none;
+    color: var(--brown);
 }
 button{
     
@@ -449,6 +450,11 @@ footer{
     gap: 3rem 0;
 }
 
+.menu_item_wrapper a{
+    max-width: ;
+
+}
+
 .menu_item_wrapper img{
     max-width: 100%;
     border-radius: 2rem;
@@ -470,6 +476,16 @@ footer{
     font-size: 2rem;
     font-weight: 600;
     color: #C89B00;
+}
+
+
+.menu_item_wrapper a{
+    text-decoration: none;
+    color:#41210f;
+}
+
+.menu_item_wrapper img:hover{
+    opacity: 80%;
 }
 
 
@@ -586,6 +602,8 @@ nav.categories .categories_name_wrapper{
     width: 100vw;
     height: 10vw;
 }
+
+
 
 .quantity_wrapper{
     display: flex;
@@ -929,3 +947,4 @@ nav.categories .categories_name_wrapper{
 .order_completion_wrapper .order_summary_checkout{
     font-size: 1.4rem;
 }
+
