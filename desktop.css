@@ -235,15 +235,19 @@ main h1{
 
 
 .page_header {
-    width: 80%;
+    max-width: 60vw;
     margin: 0 auto;
     padding: 5rem 0;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20rem;
 }
 
 .page_header h2 {
     margin: 0 auto;
     width: min-content;
+    font-size: 6.4rem;
 }
 
 .page_header p {
@@ -416,14 +420,17 @@ footer {
 /* Menu Items
 /*------------*/
 
-.menu_item_list_wrapper {}
+.menu_item_list_wrapper {
+    max-width: 56vw;
+    margin: 0 auto;
+}
 
 .menu_item_wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 5rem 0;
-    gap: 3rem 0;
+    justify-content: center;
+    padding: 4rem 0;
+    gap: 1rem;
 }
 
 .menu_item_wrapper a {
@@ -438,7 +445,8 @@ footer {
 
 
 .menu_item {
-    width: calc((100% - 4rem)/2);
+    max-width: calc((100% - 58rem)/2);
+    min-width: 19rem;
 }
 
 
@@ -471,16 +479,25 @@ footer {
 /*------------*/
 
 nav.categories {
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top: 10rem;
     display: block;
     background-color: white;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: start;
     z-index: 1;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
 
+.order_pg_wrapper nav {
+    padding-bottom: 0.4rem;
+}
+
+.order_pg_wrapper nav.categories {
+    width: 100%;
 }
 
 
@@ -488,7 +505,7 @@ nav.categories .categories_name_wrapper {
     font-family: 'Lexend';
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 2rem;
+    padding: 2rem 4rem;
     padding-bottom: 1.6rem;
     /* minus the border */
 }
@@ -721,11 +738,6 @@ nav.categories .categories_name_wrapper {
     display: flex;
     flex-flow: column;
     padding: 1rem 0;
-    background-color: #f6efd8;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    box-shadow: rgba(var(--brownrgb), 0.09) 0 -0.7rem 0.8rem;
 }
 
 .order_summary_info_wrapper {
@@ -933,4 +945,23 @@ nav.categories .categories_name_wrapper {
 
 .order_completion_wrapper .order_summary_checkout {
     font-size: 1.4rem;
+}
+
+/*
+* PAGE WRAPPER
+*/
+
+.menu_pg_wrapper{display: flex;justify-content: center;/* max-width: 80%; */}
+
+
+.order_pg_wrapper{
+
+}
+
+.order_pg_wrapper {
+}
+
+
+.menu_pg_wrapper nav, .order_pg_wrapper nav{
+    border-radius: 0;
 }

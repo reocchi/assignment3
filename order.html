@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="desktop.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <style>
@@ -16,111 +17,299 @@
 
 <body>
   <header>
-    <div class="header_wrapper">
-      <img class="logo" src="images/logo.png">
-      <div class="hamburger_menu">
-        <img class="hamburger_menu_img" src="images/hamburgermenu.png">
-      </div>
-    </div> <!-- /header_wrapper -->
-    <nav class="hamburger">
-      <ul>
-        <li><a href="">Concept</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Photo Gallery</a></li>
-      </ul>
-    </nav>
+    <div class="header_menu_wrapper">
+      <div class="header_wrapper">
+        <img class="logo" src="images/logo.png">
+        <div class="hamburger_menu">
+          <img class="hamburger_menu_img" src="images/hamburgermenu.png">
+        </div>
+      </div> <!-- /header_wrapper -->
+      <nav class="hamburger">
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Concept</a></li>
+          <li><a href="">Photo Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
+    <section class="page_header sp_hidden">
+      <h2>Menu</h2>
+      <p>Cafe Kentaro is a Japanese fusion café in Surry Hills that delights your senses with fresh, flavourful food
+        in
+        a cozy, rustic space. Enjoy mouthwatering pork tacos with zesty lime and mint, decadent Matcha French Toast
+        and
+        crispy Japanese Poutine. Sip on smooth coffee from Aroma Coffee and relax.</p>
+    </section>
 
-    <div class="order_list_wrapper">
-      <div class="order_card_wrapper">
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1 x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-            <div class="order_card_edit">Edit</div>
+    <div class="menu_pg_wrapper">
+      <div class="menu_section_wrapper">
+        <nav class="categories">
+          <div class="categories_name_wrapper categories_active">
+            Main
           </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
+          <div class="categories_name_wrapper">
+            Sides
+          </div>
+          <div class="categories_name_wrapper">
+            Drinks
+          </div>
+
+        </nav>
+
+        <section class="menu_item_list_wrapper">
+
+          <div class="menu_item_wrapper">
+            <div class="menu_item">
+              <a href="toast.html">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_1.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_2.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_3.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_4.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+            <div class="menu_item">
+              <a href="toast.html">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_1.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_2.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_3.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_4.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+            <div class="menu_item">
+              <a href="toast.html">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_1.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_2.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_3.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+
+            <div class="menu_item">
+              <a href="">
+                <figure class="menu_item_img_wrapper">
+                  <img src="dishes/dish_4.jpeg" alt="" class="">
+                </figure>
+                <dl class="menu_item_txt_wrapper">
+                  <dt class="menu_item_txt_name">Organic toast & spread</dt>
+                  <dd class="menu_item_txt_price">$7.50</dd>
+                </dl>
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div class="order_card_wrapper">
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1 x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-            <div class="order_card_edit">Edit</div>
-          </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
-      </div>
 
-      <div class="order_card_wrapper">
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1 x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-            <div class="order_card_edit">Edit</div>
-          </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
-      </div>
 
-      <div class="order_card_wrapper">
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1 x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-            <div class="order_card_edit">Edit</div>
-          </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
-      </div>
 
-      <div class="order_card_wrapper">
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1 x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-            <div class="order_card_edit">Edit</div>
+      
+      <div class="order_pg_wrapper">
+
+        <nav class="categories sp_hidden">
+          <div class="categories_name_wrapper">
+            Cart
           </div>
-          <div class="order_card_price">$7.50</div>
+
+        </nav>
+
+        <div class="order_list_wrapper">
+          <div class="order_card_wrapper">
+            <div class="order_card_content_wrapper">
+              <div class="order_card_quantity">1 x</div>
+              <div class="order_card_info">
+                <div class="order_card_title">Organic Toast & Spread</div>
+                <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                <div class="order_card_edit">Edit</div>
+              </div>
+              <div class="order_card_price">$7.50</div>
+            </div>
+          </div>
+  
+          <div class="order_card_wrapper">
+            <div class="order_card_content_wrapper">
+              <div class="order_card_quantity">1 x</div>
+              <div class="order_card_info">
+                <div class="order_card_title">Organic Toast & Spread</div>
+                <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                <div class="order_card_edit">Edit</div>
+              </div>
+              <div class="order_card_price">$7.50</div>
+            </div>
+          </div>
+  
+          <div class="order_card_wrapper">
+            <div class="order_card_content_wrapper">
+              <div class="order_card_quantity">1 x</div>
+              <div class="order_card_info">
+                <div class="order_card_title">Organic Toast & Spread</div>
+                <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                <div class="order_card_edit">Edit</div>
+              </div>
+              <div class="order_card_price">$7.50</div>
+            </div>
+          </div>
+  
+          <div class="order_card_wrapper">
+            <div class="order_card_content_wrapper">
+              <div class="order_card_quantity">1 x</div>
+              <div class="order_card_info">
+                <div class="order_card_title">Organic Toast & Spread</div>
+                <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                <div class="order_card_edit">Edit</div>
+              </div>
+              <div class="order_card_price">$7.50</div>
+            </div>
+          </div>
+  
+          <div class="order_card_wrapper">
+            <div class="order_card_content_wrapper">
+              <div class="order_card_quantity">1 x</div>
+              <div class="order_card_info">
+                <div class="order_card_title">Organic Toast & Spread</div>
+                <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                <div class="order_card_edit">Edit</div>
+              </div>
+              <div class="order_card_price">$7.50</div>
+            </div>
+          </div>
         </div>
+  
+        <div class="order_summary_wrapper">
+          <div class="order_summary_info_wrapper">
+            <div class="order_summary_content_list">
+              <div class="order_summary_content">
+                <div>Subtotal</div>
+                <div>$7.50</div>
+              </div>
+              <div class="order_summary_content">
+                <div>Card fee</div>
+                <div>$0.25</div>
+              </div>
+            </div>
+            <div class="order_summary_total">
+              <div>Total</div>
+              <div>$7.75</div>
+            </div>
+            <a href="checkout.html">
+              <div class="order_summary_checkout">
+                Continue to checkout
+              </div>
+            </a>
+          </div>
+        </div>
+  
       </div>
     </div>
-
-    <div class="order_summary_wrapper">
-      <div class="order_summary_info_wrapper">
-        <div class="order_summary_content_list">
-          <div class="order_summary_content">
-            <div>Subtotal</div>
-            <div>$7.50</div>
-          </div>
-          <div class="order_summary_content">
-            <div>Card fee</div>
-            <div>$0.25</div>
-          </div>
-        </div>
-        <div class="order_summary_total">
-          <div>Total</div>
-          <div>$7.75</div>
-        </div>
-        <a href="checkout.html"><div class="order_summary_checkout">
-          Continue to checkout
-        </div>
-      </a>
-      </div>
-    </div>
-
 
   </main>
-  <div class="box_390"></div>
 </body>
 <script src="script.js"></script>
 
