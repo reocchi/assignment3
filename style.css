@@ -658,8 +658,16 @@ nav.categories .categories_name_wrapper {
 
 
 /*------------*/
-/* Category
+/* Dish
 /*------------*/
+
+.dish_feature_wrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+
 
 .dish_img_wrapper {}
 
@@ -1119,6 +1127,9 @@ nav.categories .categories_name_wrapper {
 
 }
 
+.menu_pg_wrapper{
+    display: block;
+}
 
 
 
