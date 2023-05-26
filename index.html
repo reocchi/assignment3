@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="desktop.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <style>
@@ -16,6 +17,7 @@
 
 <body>
   <header>
+    <div class="header_menu_wrapper">
     <div class="header_wrapper">
       <img class="logo" src="images/logo.png">
       <div class="hamburger_menu">
@@ -24,22 +26,21 @@
     </div> <!-- /header_wrapper -->
     <nav class="hamburger">
       <ul>
-        <li><a href="">Concept</a></li>
-        <li><a href="">About Us</a></li>
         <li><a href="">Menu</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Concept</a></li>
         <li><a href="">Photo Gallery</a></li>
       </ul>
     </nav>
+  </div>
   </header>
   <main>
-
     <div class="land_wrapper">
       <div class="land_txt">
         <h1>
-
           Cafe Kentaro
         </h1>
-        <span class="title_sub">Fusion Refined in Sydney</span>
+        <span class="title_sub">Japanese Fusion Refined in Sydney</span>
       </div>
 
       <div class="land_img_wrapper">
@@ -83,12 +84,46 @@
               <dd class="menu_box_txt_price">¥550</dd>
             </dl>
           </div>
+          <div class="menu_box">
+            <figure class="menu_box_img_wrapper">
+              <img src="dishes/dish_2.jpeg" alt="" class="">
+            </figure>
+            <dl class="menu_box_txt_wrapper">
+              <dt class="menu_box_txt_name">チェダーチーズバーガー</dt>
+              <dd class="menu_box_txt_price">¥550</dd>
+            </dl>
+          </div>
+          <div class="menu_box">
+            <figure class="menu_box_img_wrapper">
+              <img src="dishes/dish_2.jpeg" alt="" class="">
+            </figure>
+            <dl class="menu_box_txt_wrapper">
+              <dt class="menu_box_txt_name">チェダーチーズバーガー</dt>
+              <dd class="menu_box_txt_price">¥550</dd>
+            </dl>
+          </div>
+          <div class="menu_box">
+            <figure class="menu_box_img_wrapper">
+              <img src="dishes/dish_2.jpeg" alt="" class="">
+            </figure>
+            <dl class="menu_box_txt_wrapper">
+              <dt class="menu_box_txt_name">チェダーチーズバーガー</dt>
+              <dd class="menu_box_txt_price">¥550</dd>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
     <section class="section_wrapper bg_yellow">
       <div class="page_content">
-        <img src="images/shop_1.jpg" alt="" class="concept_img">
+
+        <picture>
+          <source srcset="images/shop_1_sp.jpg" media="(max-width: 48rem)" class="concept_img">
+          <source srcset="images/shop_1_tab.jpg" media="(max-width: 80rem)" class="concept_img">
+          <img src="images/shop_1_pc.jpg" alt="" class="concept_img">
+        </picture>
+
+
         <div class="concept_wrapper">
           <h2 class="section_content_title max-width-80">
             <span class="title_sub">
@@ -108,8 +143,8 @@
       </div>
     </section>
 
-    <section class="section_wrapper">
-      <div class="page_content">
+    <section class="section_wrapper ">
+      <div class="page_content flex_row_reverse">
         <img src="images/kenny.jpg" alt="" class="aboutus_img">
         <div class="concept_wrapper">
           <h2 class="section_content_title">
@@ -130,39 +165,42 @@
 
     <section class="section_wrapper">
       <div class="page_content">
-        <div class="concept_wrapper">
+        <div class="access_wrapper">
           <h2 class="section_content_title">
 How to get here          </h2>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.959630387749!2d151.2122997124738!3d-33.89069352008346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1e1e21c8689%3A0xfebc0a1ab34f8d55!2sCafe%20Kentaro!5e0!3m2!1sen!2sus!4v1684762166981!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
-<dl class="access_info">
-  <dt class="access_info_title">Address</dt>
-  <dd class="access_info_text">616 Bourke St. <br>
-    Surry Hills 2010, NSW</dd>
-</dl>
-<dl class="access_info">
-  <dt class="access_info_title">Phone</dt>
-  <dd class="access_info_text">0468 927 728</dd>
-</dl>
-<dl class="access_info">
-  <dt class="access_info_title">Email</dt>
-  <dd class="access_info_text">info@cafekentaro.com.au</dd>
-</dl>
-<dl class="access_info no_border">
-  <dt class="access_info_title">Opening Hours</dt>
-  <dd class="access_info_text">
-    <li>
-      Monday - Friday
-        <li class="access_info_hours">7.00am - 3.30pm</li>
-    </li>
+<div class="access_info_wrapper">
+  <dl class="access_info">
+    <dt class="access_info_title">Address</dt>
+    <dd class="access_info_text">616 Bourke St. <br>
+      Surry Hills 2010, NSW</dd>
+  </dl>
+  <dl class="access_info">
+    <dt class="access_info_title">Phone</dt>
+    <dd class="access_info_text">0468-927-728</dd>
+  </dl>
+  <dl class="access_info">
+    <dt class="access_info_title">Email</dt>
+    <dd class="access_info_text">info@cafekentaro.com.au</dd>
+  </dl>
+  <dl class="access_info no_border">
+    <dt class="access_info_title">Opening Hours</dt>
+    <dd class="access_info_text">
+      <li>
+        Monday - Friday
+          <li class="access_info_hours">7.00am - 3.30pm</li>
+      </li>
+  
+      </li>
+      <li>Saturday - Sunday
+        <li class="access_info_hours"> 8.00am - 4.00pm</li>
+      </li>
+      <p>Our kitchen will be closed on Tuesdays. <br>However, Coffees and drinks will still be served!</p>
+    </dd>
+  </dl>
+</div>
 
-    </li>
-    <li>Saturday - Sunday
-      <li class="access_info_hours"> 8.00am - 4.00pm</li>
-    </li>
-    <p>Our kitchen will be closed on Tuesdays. However, Coffees and drinks will still be served!</p>
-  </dd>
-</dl>
         </div>
       </div>
     </section>
@@ -175,7 +213,6 @@ How to get here          </h2>
 
     
   </footer>
-  <div class="box_390"></div>
 </body>
 <script src="script.js"></script>
 </html>

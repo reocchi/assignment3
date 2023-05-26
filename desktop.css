@@ -1,158 +1,14 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-input,
-textarea,
-button,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-button {
-margin: 0;
-padding: 0;
-border: 0;
-font-family: 'DM sans', 'Lexend';
-font-size: 100%;
-vertical-align: baseline;
-}
-
-:root {
---yellow: #FBC300;
---brown: #41210f;
---brownrgb: 65, 33, 15;
-
-}
-
-html {
-font-size: 62.5%;
-}
-
-body {
-background: #f6efd8;
-color: var(--brown);
-font-family: sans-serif;
-font-size: 1.4rem;
-line-height: 1;
-
-}
-
-h1,
-h2 {
-font-family: 'Lexend';
-}
-
-a {
-text-decoration: none;
-color: var(--brown);
-}
-
-
-/*------------*/
-/*------------*/
-/*------------*/
-/* MEDIA    
-/*------------*/
-/*------------*/
-/*------------*/
-
-
-
-
-@media screen and (max-width: 48em) {
-/* 1rem = 10px */
+/*
+*
+*/
 
 /*------------*/
 /* Base Tags    
 /*------------*/
 
-
-h1,
-h2 {
-font-size: 6.4rem;
-}
-
-
 img {
     max-width: 100%;
 }
-
-
-button {}
 
 /* , .options_list input[type="text"] */
 
@@ -208,69 +64,40 @@ main {
     justify-content: unset;
 }
 
-.box_390 {
-    width: 390px;
-    height: 20px;
-    ;
-    background-color: aqua;
-    display: block;
-    ;
+.flex_row_reverse{
+    flex-flow: row-reverse;
 }
-
-
-.button {
-    width: 16rem;
-    height: 6.4rem;
-    border-radius: 3.2rem;
-    font-size: 1.6rem;
-    line-height: 6.4rem;
-}
-
 
 /*------------*/
 /* Header    
 /*------------*/
 header {
-    background-color: white;
-    padding: 0;
-    height: 10rem;
-    box-shadow: 0 0 1rem rgb(0 0 0 / 0.1);
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    margin: 0 auto;
-    position: fixed;
-    z-index: 999;
+    z-index: 9999;
+
 }
 
 .header_menu_wrapper{
-    display: block;
-    height:10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header_wrapper {
     height: 100%;
-    width: calc(100% - 4rem);
-    margin: 0 auto;
-    padding: 0;
-
-    /* FLEX */
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 6rem 0;
 }
 
-
 header .logo {
-    height: 5rem;
+    height: 8rem;
+    width:auto;
 }
 
 header .hamburger_menu_img {
-    display: block;
-    height: 3rem;
-    cursor: pointer;
+    display: none;
 }
 
 
@@ -281,29 +108,29 @@ header .hamburger_menu_img {
 
 }
 
+
+header nav ul {
+    display: flex;
+    flex-wrap: none;
+}
+header nav ul li{
+    list-style: none;;
+}
+
 /*------------*/
 /* Navigation    
 /*------------*/
 
-header nav ul {
-    display: block;
-}
-
 nav.hamburger {
-    display: none;
-    background: white;
-    margin-top: -2rem auto;
-    box-shadow: 0 0 1rem -1rem rgb(0 0 0 / 0.1);
-    padding-bottom: 1rem;
-
 }
 
 nav.hamburger ul li {
     padding: 2rem 2rem;
     font-size: 2.5rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     font-family: "DM Sans";
+    font-size: 2rem;
 }
 
 ::selection {
@@ -314,35 +141,36 @@ nav.hamburger ul li {
 nav.hamburger ul li a:link,
 nav ul li a:visited {
     text-decoration: none;
-    color: black;
 }
+
+
+/*------------*/
+/* Main   
+/*------------*/
 
 
 main h1{
-    font-size: 6.4rem;
+    font-size: 10rem;
 }
 
 .land_wrapper {
-    padding: 5rem 2rem 0;
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    margin: 0;
-    width: auto;
+    align-items: center;
+    width: 100%;
+    max-width: 160rem;
+    margin: 14rem auto 0;
+    justify-content: space-around;
 }
 
 .land_txt {
-    width: 100%;
     display: flex;
     flex-flow: column-reverse;
-
 
 }
 
 
 .land_img_wrapper {
-    width: 35rem;
-    margin: 0 auto;
+    width: 50rem;
     z-index: -1;
 }
 
@@ -352,14 +180,14 @@ main h1{
 }
 
 .title_sub {
-    font-size: 2rem;
+    font-size: 3.6rem;
     font-family: 'DM Sans';
     font-weight: 500;
 
 }
 
 .land_img {
-    max-width: 100%;
+    max-width: 80%;
     filter: drop-shadow(1rem 2rem 1rem rgb(0, 0, 0, 0.2));
 }
 
@@ -371,13 +199,22 @@ main h1{
 /* Menu    
 /*------------*/
 
+.menu_wrapper{
+    max-width: 160rem;
+}
+
 .menu_title_wrapper {
     width: calc(100% - 4rem);
+    font-size: 8rem;
+    max-width: 160rem;
     margin: 0 auto;
 }
 
 .menu_food {
-    margin: 8rem 0;
+    display: flex;
+    max-width: 100vw;
+    margin-left: 4rem;
+    overflow: scroll;
 }
 
 .menu_box_wrapper img {
@@ -386,22 +223,16 @@ main h1{
 }
 
 .menu_box_wrapper {
-    width: 100vw;
     display: flex;
     flex-flow: row;
-    overflow: block;
+    overflow-x: scroll;
+
 }
 
 .menu_box {
     margin: 2rem
 }
 
-.page_content {
-    width: calc(100% - 4rem);
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column;
-}
 
 .page_header {
     width: 80%;
@@ -431,7 +262,6 @@ main h1{
 
 .section_wrapper {
     display: flex;
-    flex-flow: column-reverse;
     color: #41210f;
     padding: 8rem 0 0;
 }
@@ -455,23 +285,31 @@ main h1{
 /* Concept    
 /*------------*/
 
-.concept_wrapper{
+.page_content{
+    width: calc(100% - 20rem);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 0 5rem;
+    max-width: 160rem;;
+
+}
+.concept_wrapper {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;;
+    width: 50%;
 }
 
 .concept_img {
     border-radius: 2rem;
-
 }
 
 .section_content_title {
     margin-bottom: 2rem;
     font-size: 3.6rem;
     max-width: 100%;
-    ;
     line-height: 4.2rem;
     font-weight: 600;
     word-wrap:
@@ -495,7 +333,7 @@ main h1{
 /*------------*/
 
 .aboutus_img {
-    border-radius: 2rem;
+    border-radius: 2rem;q
 
 
 
@@ -505,18 +343,17 @@ main h1{
 /* Access   
 /*------------*/
 
-.access_wrapper{
-    width: auto;
-}
-.access_info_wrapper{
+.access_wrapper {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: calc(100% - 20rem); */
 }
 
+
+
 .map {
-    height: 390px;
+    height: calc(25vw);
     border-radius: 3rem;
     margin: 2rem 0;
 }
@@ -553,6 +390,11 @@ main h1{
     margin: 1rem;
 }
 
+.access_info_wrapper{
+    display: flex;
+    gap: 0 7rem;
+    flex-wrap: wrap;
+}
 /*------------*/
 /* Footer
 /*------------*/
@@ -565,7 +407,7 @@ footer {
 }
 
 .footer_logo_wrapper {
-    width: calc(100% - 20rem);
+    width: 20rem;
     margin: 0 auto;
 
 }
@@ -1091,6 +933,4 @@ nav.categories .categories_name_wrapper {
 
 .order_completion_wrapper .order_summary_checkout {
     font-size: 1.4rem;
-}
-
 }
