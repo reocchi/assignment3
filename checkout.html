@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="desktop.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <style>
@@ -16,22 +17,33 @@
 
 <body>
   <header>
-    <div class="header_wrapper">
-      <img class="logo" src="images/logo.png">
-      <div class="hamburger_menu">
-        <img class="hamburger_menu_img" src="images/hamburgermenu.png">
-      </div>
-    </div> <!-- /header_wrapper -->
-    <nav class="hamburger">
-      <ul>
-        <li><a href="">Concept</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Photo Gallery</a></li>
-      </ul>
-    </nav>
+    <div class="header_menu_wrapper">
+      <div class="header_wrapper">
+        <img class="logo" src="images/logo.png">
+        <div class="hamburger_menu">
+          <img class="hamburger_menu_img" src="images/hamburgermenu.png">
+        </div>
+      </div> <!-- /header_wrapper -->
+      <nav class="hamburger">
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Concept</a></li>
+          <li><a href="">Photo Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
+
+    <div class="menu_pg_wrapper">
+      <div class="order_list_wrapper">
+        <nav class="categories">
+          <div class="categories_name_wrapper categories_active sp_hidden">
+            Checkout
+          </div>
+          
+        </nav>
 
     <section class="order_list_wrapper">
       <h4>Contact Information</h4>
@@ -60,99 +72,111 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="order_list_wrapper">
-      <h4>Order Information</h4>
-      <div class="order_card_wrapper">
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-          </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
-
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-          </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
-
-        <div class="order_card_content_wrapper">
-          <div class="order_card_quantity">1x</div>
-          <div class="order_card_info">
-            <div class="order_card_title">Organic Toast & Spread</div>
-            <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
-          </div>
-          <div class="order_card_price">$7.50</div>
-        </div>
-
-        <div class="order_card_content_wrapper add_items">
-          + Add more items
-        </div>
-
-        <div class="order_summary_info_wrapper">
-          <div class="order_summary_content_list">
-            <div class="order_summary_content">
-              <div>Subtotal</div>
-              <div>$22.5</div>
+        <h4>Credit Card Information</h4>
+        <div class="order_card_wrapper">
+          
+          <div class="form_wrapper">
+            <div class="field_wrapper">
+              <label for="cardnumber">Card Number</label>
+              <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
             </div>
-            <div class="order_summary_content">
-              <div>Card fee</div>
-              <div>$0.25</div>
+            <div class="field_wrapper">
+              <label for="cardnumber">Name</label>
+              <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
             </div>
-          </div>
-          <div class="order_summary_total">
-            <div>Total</div>
-            <div>$22.75</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="order_list_wrapper">
-      <h4>Credit Card Information</h4>
-      <div class="order_card_wrapper">
-        
-        <div class="form_wrapper">
-          <div class="field_wrapper">
-            <label for="cardnumber">Card Number</label>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
-          </div>
-          <div class="field_wrapper">
-            <label for="cardnumber">Name</label>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
-          </div>
-          <div class="field_wrapper">
-            <label for="cardnumber">Expiration</label>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
-          </div>
-          <div class="field_wrapper">
-            <label for="cardnumber">Security</label>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+            <div class="field_wrapper">
+              <label for="cardnumber">Expiration</label>
+              <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            <div class="field_wrapper">
+              <label for="cardnumber">Security</label>
+              <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            
           </div>
           
         </div>
         
-      </div>
-      
-      </div>
     </section>
+      </div>
 
 
-    <div class="order_summary_wrapper">
-      <div class="order_summary_info_wrapper">
-        <a href="complete_order.html"><div class="order_summary_checkout">
-          Place Order
+
+
+      
+      <div class="order_pg_wrapper">
+        <nav class="categories sp_hidden">
+          <div class="categories_name_wrapper">
+            Cart
+          </div>
+
+        </nav>
+
+        <div class="order_list_wrapper">
+          <section class="order_list_wrapper">
+            <div class="order_card_wrapper">
+              <div class="order_card_content_wrapper">
+                <div class="order_card_quantity">1x</div>
+                <div class="order_card_info">
+                  <div class="order_card_title">Organic Toast & Spread</div>
+                  <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                </div>
+                <div class="order_card_price">$7.50</div>
+              </div>
+      
+              <div class="order_card_content_wrapper">
+                <div class="order_card_quantity">1x</div>
+                <div class="order_card_info">
+                  <div class="order_card_title">Organic Toast & Spread</div>
+                  <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                </div>
+                <div class="order_card_price">$7.50</div>
+              </div>
+      
+              <div class="order_card_content_wrapper">
+                <div class="order_card_quantity">1x</div>
+                <div class="order_card_info">
+                  <div class="order_card_title">Organic Toast & Spread</div>
+                  <div class="order_card_desc">soy & linseed sourdough, rye or gluten free bread</div>
+                </div>
+                <div class="order_card_price">$7.50</div>
+              </div>
+      
+              <div class="order_card_content_wrapper add_items">
+                + Add more items
+              </div>
+      
+              <div class="order_summary_info_wrapper">
+                <div class="order_summary_content_list">
+                  <div class="order_summary_content">
+                    <div>Subtotal</div>
+                    <div>$22.5</div>
+                  </div>
+                  <div class="order_summary_content">
+                    <div>Card fee</div>
+                    <div>$0.25</div>
+                  </div>
+                </div>
+                <div class="order_summary_total">
+                  <div>Total</div>
+                  <div>$22.75</div>
+                </div>
+
+                <a href="checkout.html">
+                  <div class="order_summary_checkout">
+                    Place Order
+                  </div>
+                </a>
+              </div>
+              
+              
+            </div>
+          </section>
         </div>
-        </a>
+  
       </div>
     </div>
+
 
   </main>
 </body>
