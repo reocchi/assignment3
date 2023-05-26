@@ -40,6 +40,9 @@ img{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;;
+}
 button{
     
 }
@@ -57,10 +60,6 @@ button{
 main{
     margin:10rem 0 10rem 0;
 }
-/*------------*/
-/* Variables    
-/*------------*/
-
 
 
 /*------------*/
@@ -96,6 +95,19 @@ main{
 .left{
     margin-left: auto;
 }
+
+
+.justify_unset{
+    justify-content: unset;
+}
+
+.box_390{
+    width:390px;
+    height: 20px;;
+    background-color: aqua;
+    display: block;;
+}
+
 
 
 
@@ -230,12 +242,6 @@ nav.hamburger ul li a:link, nav ul li a:visited{
 }
 
 
-.box_390{
-    width:390px;
-    height: 20px;;
-    background-color: aqua;
-    display: block;;
-}
 
 
 
@@ -812,9 +818,6 @@ nav.categories .categories_name_wrapper{
     
 }
 
-.justify_unset{
-    justify-content: unset;
-}
 
 .card_input_wrapper{
     display: flex;
@@ -890,4 +893,39 @@ nav.categories .categories_name_wrapper{
         border: 1px solid #dcdcdc;
         display: block;
     
+}
+
+
+
+/*------------*/
+/* Orer Completion Page
+/*------------*/
+
+
+.tickmark{
+    content: url('images/tickmark.svg');
+    width: 10rem;
+    height: 10rem;
+}
+
+.order_completion_wrapper{
+    display: flex;
+    gap: 2rem 2rem;
+    justify-content: space-around;
+    padding: 2rem;
+    padding-top: 0;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.order_completion_wrapper p{
+    text-align: center;
+    line-height: 2.1rem;
+    font-size: 1.6rem;
+}
+
+
+.order_completion_wrapper .order_summary_checkout{
+    font-size: 1.4rem;
 }
