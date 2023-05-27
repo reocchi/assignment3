@@ -1833,12 +1833,12 @@ nav.categories .categories_name_wrapper {
         justify-content: space-around;
         align-content: center;
         background-color: white;
-        ;
         bottom: 0;
         padding: 2rem 0;
         position: fixed;
         width: 100vw;
         height: 10vw;
+        align-items: center;
     }
 
 

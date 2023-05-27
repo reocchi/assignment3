@@ -684,6 +684,7 @@ nav.categories .categories_name_wrapper {
     justify-content: space-around;
     align-items: center;
     border-radius: 20rem;
+    cursor: pointer;
 
 
 }
