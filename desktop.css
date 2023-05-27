@@ -266,6 +266,14 @@ main h1{
 
 .menu_box_txt_price {}
 
+.filter_list_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 -2rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;;
+}
+
 /*------------*/
 /* Sections    
 /*------------*/
