@@ -18,21 +18,23 @@
 <body>
   <header>
     <div class="header_menu_wrapper">
-    <div class="header_wrapper">
-      <img class="logo" src="images/logo.png">
-      <div class="hamburger_menu">
-        <img class="hamburger_menu_img" src="images/hamburgermenu.png">
-      </div>
-    </div> <!-- /header_wrapper -->
-    <nav class="hamburger">
-      <ul>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Concept</a></li>
-        <li><a href="">Photo Gallery</a></li>
-      </ul>
-    </nav>
-  </div>
+      <div class="header_wrapper">
+        <a href="index.html">
+        <img class="logo" src="images/logo.png">
+      </a>
+        <div class="hamburger_menu">
+          <img class="hamburger_menu_img" src="images/hamburgermenu.png">
+        </div>
+      </div> <!-- /header_wrapper -->
+      <nav class="hamburger">
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Concept</a></li>
+          <li><a href="">Photo Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="land_wrapper">
@@ -48,9 +50,15 @@
 
       </div>
     </div>
+    <!-- Yellow Background -->
     <div class="land_bg_wrapper">
-      <img src="images/background.svg" alt="" class="land_bg">
+      <picture>
+        <source srcset="images/background_sp.svg" media="(max-width: 48rem)">
+        <img src="images/background_pc.svg" alt="">
+      </picture>
     </div>
+
+    <!-- Scrolling Menu-->
     <section class="menu_food">
       <div class="menu_wrapper">
         <div class="menu_title_wrapper">
@@ -62,8 +70,8 @@
               <img src="dishes/dish_1.jpeg" alt="" class="">
             </figure>
             <dl class="menu_box_txt_wrapper">
-              <dt class="menu_box_txt_name">Organic toast & spread</dt>
-              <dd class="menu_box_txt_price">¥550</dd>
+              <dt class="menu_item_txt_name">Organic toast & spread</dt>
+              <dd class="menu_item_txt_price">¥550</dd>
             </dl>
           </div>
           <div class="menu_box">
@@ -71,17 +79,8 @@
               <img src="dishes/dish_3.jpeg" alt="" class="">
             </figure>
             <dl class="menu_box_txt_wrapper">
-              <dt class="menu_box_txt_name">Organic toast & spread</dt>
-              <dd class="menu_box_txt_price">¥550</dd>
-            </dl>
-          </div>
-          <div class="menu_box">
-            <figure class="menu_box_img_wrapper">
-              <img src="dishes/dish_2.jpeg" alt="" class="">
-            </figure>
-            <dl class="menu_box_txt_wrapper">
-              <dt class="menu_box_txt_name">Organic toast & spread</dt>
-              <dd class="menu_box_txt_price">¥550</dd>
+              <dt class="menu_item_txt_name">Organic toast & spread</dt>
+              <dd class="menu_item_txt_price">¥550</dd>
             </dl>
           </div>
           <div class="menu_box">
@@ -98,8 +97,8 @@
               <img src="dishes/dish_2.jpeg" alt="" class="">
             </figure>
             <dl class="menu_box_txt_wrapper">
-              <dt class="menu_box_txt_name">Organic toast & spread</dt>
-              <dd class="menu_box_txt_price">¥550</dd>
+              <dt class="menu_item_txt_name">Organic toast & spread</dt>
+              <dd class="menu_item_txt_price">¥550</dd>
             </dl>
           </div>
           <div class="menu_box">
@@ -107,8 +106,17 @@
               <img src="dishes/dish_2.jpeg" alt="" class="">
             </figure>
             <dl class="menu_box_txt_wrapper">
-              <dt class="menu_box_txt_name">Organic toast & spread</dt>
-              <dd class="menu_box_txt_price">¥550</dd>
+              <dt class="menu_item_txt_name">Organic toast & spread</dt>
+              <dd class="menu_item_txt_price">¥550</dd>
+            </dl>
+          </div>
+          <div class="menu_box">
+            <figure class="menu_box_img_wrapper">
+              <img src="dishes/dish_2.jpeg" alt="" class="">
+            </figure>
+            <dl class="menu_box_txt_wrapper">
+              <dt class="menu_item_txt_name">Organic toast & spread</dt>
+              <dd class="menu_item_txt_price">¥550</dd>
             </dl>
           </div>
         </div>

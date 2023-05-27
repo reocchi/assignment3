@@ -19,7 +19,9 @@
   <header>
     <div class="header_menu_wrapper">
       <div class="header_wrapper">
+        <a href="index.html">
         <img class="logo" src="images/logo.png">
+      </a>
         <div class="hamburger_menu">
           <img class="hamburger_menu_img" src="images/hamburgermenu.png">
         </div>
@@ -35,6 +37,15 @@
     </div>
   </header>
   <main>
+
+    <!-- Yellow Background -->
+    <div class="land_bg_wrapper">
+      <picture>
+        <source srcset="images/background_sp.svg" media="(max-width: 48rem)">
+        <img src="images/background_pc.svg" alt="">
+      </picture>
+    </div>
+
     <section class="page_header">
       <h2>Menu</h2>
       <p>Cafe Kentaro is a Japanese fusion café in Surry Hills that delights your senses with fresh, flavourful food
@@ -46,7 +57,7 @@
 
     <div class="menu_pg_wrapper">
       <div class="menu_section_wrapper sp_show">
-        <nav class="categories">
+        <nav class="categories radius_left">
           <div class="categories_name_wrapper categories_active">
             Main
           </div>
@@ -212,7 +223,7 @@
 
       
       <div class="order_pg_wrapper sp_hidden">
-        <nav class="categories sp_hidden">
+        <nav class="categories sp_hidden radius_right">
           <div class="categories_name_wrapper">
             Cart
           </div>
