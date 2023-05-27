@@ -568,7 +568,7 @@ footer {
 
 .menu_item_list_wrapper {
     max-width: 65vw;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .menu_item_wrapper {
@@ -1662,7 +1662,11 @@ nav.categories .categories_name_wrapper {
     /* Menu Items
 /*------------*/
 
-    .menu_item_list_wrapper {}
+    .menu_item_list_wrapper {
+    width: 100vw;
+    margin: 0;
+    justify-content: space-around;
+}
 
     .menu_item_wrapper {
         display: flex;
@@ -1670,6 +1674,7 @@ nav.categories .categories_name_wrapper {
         justify-content: space-around;
         padding: 5rem 0;
         gap: 3rem 0;
+        width: 100vw;
     }
 
     .menu_item_wrapper a {}
@@ -1681,7 +1686,7 @@ nav.categories .categories_name_wrapper {
 
 
     .menu_item {
-        max-width: calc((100% - 4rem)/2);
+        max-width: calc((100% - 1rem)/2);
         min-width: 5rem;
     }
 
