@@ -1893,14 +1893,12 @@ nav.categories .categories_name_wrapper {
         flex-flow: row;
         justify-content: space-around;
         align-items: center;
-
         background-color: var(--yellow);
         width: calc(100% - 4rem);
         border-radius: 4rem;
         font-size: 1.6rem;
         font-weight: 300;
-
-
+        padding: 1.5rem;
     }
 
     .view_order_text {
