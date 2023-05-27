@@ -18,18 +18,14 @@ if (window.screen.width >= 490) {
 
 var plusBtn = document.getElementsByClassName('plus')[0];
 var minusBtn = document.getElementsByClassName('minus')[0];
-
 var orderQty = document.getElementsByClassName('quantity')[0];
-
 const state = { count: 0 };
-
 plusBtn.addEventListener('click', function (){
     console.log('clicked!');
     orderQty.innerHTML  = ++state.count;
 
     
 }, false);
-
 minusBtn.addEventListener('click', function (){
     console.log('clicked!');
     if (state.count > 0) {
