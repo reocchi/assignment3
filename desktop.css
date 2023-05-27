@@ -561,6 +561,18 @@ nav.categories .categories_name_wrapper {
 
 }
 
+
+.dish_info_wrapper{
+    display: flex;
+
+}
+
+.close_button_wrapper{
+    min-width: 2.5rem;
+}
+.close_button{
+}
+
 .dish_info {
     /* width: calc(100% - 4rem); */
     /* margin: 2rem auto; */
