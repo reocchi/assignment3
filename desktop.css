@@ -145,7 +145,7 @@ main h1{
     align-items: center;
     width: 100%;
     max-width: 160rem;
-    margin: 14rem auto 0;
+    margin: 14rem 3rem 0;
     justify-content: space-around;
 }
 
@@ -532,23 +532,30 @@ nav.categories .categories_name_wrapper {
     background-color: rgba(0,0,0,0.7);
 }
 .dish_feature_wrapper{
+    display: flex;
     position: fixed;
-    height: 67vw;
-    overflow: scroll;
-    aspect-ratio: 10/30;
-    min-width: 24vw;
     background-color: #f6efd8;
+    overflow: hidden;
+    width: 50%;
+    flex-direction: column;
+    z-index: 9999;
 }
 
 .dish_img_wrapper {
+    width: auto;
 }
 
-.dish_img {
+.dish_img_info_wrapper {
+    display: flex;
+    flex-flow: row;
+    padding: 2rem;
+    gap: 2rem;
+
 }
 
 .dish_info {
-    width: calc(100% - 4rem);
-    margin: 2rem auto;
+    /* width: calc(100% - 4rem); */
+    /* margin: 2rem auto; */
     display: flex;
     flex-flow: column;
     gap: 1rem 0;
