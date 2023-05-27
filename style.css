@@ -824,9 +824,8 @@ nav.categories .categories_name_wrapper {
 .order_list_wrapper {
     display: flex;
     flex-flow: column;
-    align-items: flex-end;
+    align-items: center;
     width: calc(100% - 4rem);
-    align-content: center;
     margin: 0 auto;
 }
 
@@ -834,8 +833,8 @@ nav.categories .categories_name_wrapper {
     display: flex;
     flex-flow: column;
     background-color: white;
-    width: 100%;
-    margin: 1rem 0;
+    /* width: 100%; */
+    /* margin: 1rem 0; */
     /* padding: 2rem 0; */
     border-radius: 2rem;
     font-size: 1.6rem;
